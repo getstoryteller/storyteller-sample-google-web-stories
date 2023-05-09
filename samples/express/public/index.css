@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/Euclid/EuclidCircularB-Regular-WebS.woff") format("woff");
+}
+
+body {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Euclid Circular B", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.content {
+  margin: 24px;
+  max-width: 1200px;
+  width: 100vw;
+}
+
+.top-bar-section {
+  background: #f3f6fc;
+  display: flex;
+  justify-content: center;
+  margin-top: -8px;
+  width: 100vw;
+}
+
+.top-bar {
+  align-items: center;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1200px;
+  width: 100vw;
+}
+
+.storyteller-logo-desktop {
+  height: 48px;
+  position: relative;
+}
+
+.storyteller-logo-mobile {
+  display: none;
+  position: relative;
+}
+
+.sample-text {
+  color: rgba(23, 26, 37, 0.75);
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  text-align: right;
+  position: relative;
+  width: 300px;
+}
+
+.top-placeholder-desktop {
+  background: #dfeaff;
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.bottom-placeholders {
+  display: flex;
+}
+
+.bottom-left-placeholder {
+  display: flex;
+  flex: 1;
+  padding-right: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.bottom-right-placeholder {
+  display: flex;
+  flex: 1;
+  padding-left: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.top-placeholder-mobile {
+  background: #dfeaff;
+  border-radius: 4px;
+  margin-left: 16px;
+  position: relative;
+  display: none;
+  width: calc(100% - 32px);
+}
+
+.bottom-placeholder-mobile {
+  background: #dfeaff;
+  border-radius: 4px;
+  margin-left: 16px;
+  position: relative;
+  display: none;
+  width: calc(100% - 32px);
+}
+
+.storyteller-row {
+  padding: 24px 0 24px 0;
+  height: 150px;
+  position: relative;
+}
+
+.reset {
+  bottom: 24px;
+  background: #1c62eb;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 0.2em;
+  line-height: 20px;
+  padding: 12px 24px;
+  position: fixed;
+  text-align: right;
+  text-transform: uppercase;
+  width: 251px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .top-bar {
+    height: 64px;
+  }
+
+  .storyteller-logo-mobile {
+    display: block;
+    margin-left: 16px;
+    position: relative;
+  }
+
+  .storyteller-logo-desktop {
+    display: none;
+  }
+
+  .sample-text {
+    font-size: 16px;
+    margin-right: 16px;
+  }
+
+  .top-placeholder-mobile {
+    display: block;
+  }
+
+  .bottom-placeholder-mobile {
+    display: block;
+  }
+
+  .top-placeholder-desktop {
+    display: none;
+  }
+  .bottom-left-placeholder {
+    display: none;
+  }
+  .bottom-right-placeholder {
+    display: none;
+  }
+}
